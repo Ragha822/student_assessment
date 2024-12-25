@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Class Allocation System</title>
+    <link rel="stylesheet" href="proj.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Class Allocation System</h1>
+        <nav>
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="allocation.html">Allocate</a>
+          <a href="#">Logout</a>
+        </nav>
+      </header>
+      <div class="main">
+        <aside class="sidebar">
+          <ul>
+            <li><a href="#">View Rooms</a></li>
+            <li><a href="#">Manage Allocations</a></li>
+          </ul>
+        </aside>
+        <section class="content">
+          <h2>Welcome, Admin!</h2>
+          <button class="btn-create" onclick="location.href='allocation.html'">
+            Allocate Class
+          </button>
+          <div class="allocation-section">
+            <h3>Existing Allocations</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Room</th>
+                  <th>Roll Number Range</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Class A</td>
+                  <td>Room A</td>
+                  <td>1-30</td>
+                  <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Class B</td>
+                  <td>Room B</td>
+                  <td>31-60</td>
+                  <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - ISA Timetable System</title>
+    <link rel="stylesheet" href="proj.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>ISA Timetable System</h1>
+        <nav>
+          <a href="dashboard.html" class="active">Dashboard</a>
+          <a href="timetable.html">Timetables</a>
+          <a href="#">Courses</a>
+          <a href="#">Logout</a>
+        </nav>
+      </header>
+      <div class="main">
+        <aside class="sidebar">
+          <ul>
+            <li><a href="#">ISA Dates</a></li>
+            <li><a href="#">Manage Courses</a></li>
+            <li><a href="#">Timetable Summary</a></li>
+          </ul>
+        </aside>
+        <section class="content">
+          <h2>Welcome, Faculty Member!</h2>
+          <div class="calendar-section">
+            <h3>Select ISA Dates</h3>
+            <p>Calendar widget here</p>
+          </div>
+          <div class="timetable-section">
+            <button class="btn-create" onclick="location.href='timetable.html'">
+              Create New Timetable
+            </button>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Time Slot</th>
+                  <th>Course</th>
+                  <th>Room</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>28-Oct</td>
+                  <td>9:00 - 11:00</td>
+                  <td>CS101</td>
+                  <td>Room A</td>
+                  <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

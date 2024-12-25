@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="proj.css" />
+    <script src="login.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <h1>KLE Technological University</h1>
+        <p>Welcome to the Faculty and Admin Portal</p>
+        <ul>
+          <li>Manage classroom and lab allocations</li>
+          <li>View the COE Calendar</li>
+          <li>Contact support for help</li>
+        </ul>
+      </div>
+      <div class="right-panel">
+        <h2>Login to Your Account</h2>
+        <form id="loginForm">
+          <label for="role">Select Role:</label>
+          <select id="role" name="role" required>
+            <option value="">Select...</option>
+            <option value="Admin">Admin</option>
+            <option value="Student">Student</option>
+          </select>
+
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter Username"
+            required
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter Password"
+            required
+          />
+
+          <label for="captcha">Captcha:</label>
+          <div class="captcha-box">
+            <span id="captchaCode" class="captcha-code"></span>
+            <button type="button" id="refreshCaptcha" class="refresh-captcha">↻</button>
+          </div>
+          <input
+            type="text"
+            id="captchaInput"
+            name="captcha"
+            placeholder="Enter Captcha"
+            required
+          />
+
+          <button type="button" id="loginButton">LOGIN</button>
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

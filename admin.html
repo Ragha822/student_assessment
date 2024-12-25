@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allocate Class - Class Allocation System</title>
+    <link rel="stylesheet" href="proj.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Class Allocation System</h1>
+        <nav>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="allocation.html" class="active">Allocate</a>
+          <a href="#">Logout</a>
+        </nav>
+      </header>
+      <div class="main">
+        <section class="content">
+          <h2>Allocate Class</h2>
+          <form id="allocationForm" action="dashboard.html" method="POST">
+            <label for="startRoll">Starting Roll Number:</label>
+            <input
+              type="number"
+              id="startRoll"
+              name="startRoll"
+              placeholder="Enter Starting Roll Number"
+              required
+            />
+
+            <label for="room">Select Room:</label>
+            <select id="room" name="room" required>
+              <option value="Room A">Room A</option>
+              <option value="Room B">Room B</option>
+              <option value="Room C">Room C</option>
+            </select>
+
+            <button type="submit" class="btn-submit">Allocate</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

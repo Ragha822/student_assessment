@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Timetable</title>
+    <link rel="stylesheet" href="proj.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>ISA Timetable System</h1>
+        <nav>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="timetable.html" class="active">Timetables</a>
+          <a href="#">Courses</a>
+          <a href="#">Logout</a>
+        </nav>
+      </header>
+      <div class="main">
+        <aside class="sidebar">
+          <ul>
+            <li><a href="#">ISA Dates</a></li>
+            <li><a href="#">Manage Courses</a></li>
+            <li><a href="#">Timetable Summary</a></li>
+          </ul>
+        </aside>
+        <section class="content">
+          <h2>Create Timetable</h2>
+          <form id="timetableForm">
+            <label for="date">Date</label>
+            <input type="date" id="date" required />
+
+            <label for="timeSlot">Time Slot</label>
+            <input
+              type="text"
+              id="timeSlot"
+              placeholder="e.g., 9:00 - 11:00"
+              required
+            />
+
+            <label for="course">Course</label>
+            <input
+              type="text"
+              id="course"
+              placeholder="Enter Course Name"
+              required
+            />
+
+            <label for="room">Room</label>
+            <input
+              type="text"
+              id="room"
+              placeholder="Enter Room Name"
+              required
+            />
+
+            <button type="submit" class="btn-create">Add Timetable</button>
+          </form>
+          <h3>Existing Timetable</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Time Slot</th>
+                <th>Course</th>
+                <th>Room</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="timetableList">
+              <!-- Dynamic Rows -->
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
